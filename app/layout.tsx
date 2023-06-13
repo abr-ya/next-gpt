@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Next 13 + Tailwind AI App",
+  title: "AI App == Next 13 + Tailwind",
   description: "Discover and share ai-prompts",
 };
 
