@@ -1,3 +1,4 @@
+import { Nav, AuthProvider } from "@/components";
 import "./globals.css";
 
 export const metadata = {
@@ -8,14 +9,16 @@ export const metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body>
-      <div className="main">
-        <div className="gradient" />
-      </div>
+      <AuthProvider>
+        <div className="main">
+          <div className="gradient" />
+        </div>
 
-      <main className="app">
-        {/* todo: Nav */}
-        {children}
-      </main>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
+      </AuthProvider>
     </body>
   </html>
 );
