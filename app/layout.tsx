@@ -1,4 +1,4 @@
-import { Nav, AuthProvider } from "@/components";
+import { Nav, AuthProvider } from "@/app/components";
 import "./globals.css";
 
 export const metadata = {
