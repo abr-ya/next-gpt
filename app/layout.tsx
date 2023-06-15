@@ -1,5 +1,8 @@
-import { Nav, AuthProvider } from "@/app/components";
+import { Nav } from "@/app/components";
 import "./globals.css";
+import AuthProvider from "./providers/AuthProvider";
+import ToasterProvider from "./providers/ToasterProvider";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata = {
   title: "AI App == Next 13 + Tailwind",
@@ -9,6 +12,7 @@ export const metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body>
+      <ToasterProvider />
       <AuthProvider>
         <div className="main">
           <div className="gradient" />
